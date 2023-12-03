@@ -1,0 +1,24 @@
+<nav class="navbar navbar-light navbar-vertical navbar-expand-xl text-center">
+    <div class="py-3" *ngFor="let menu of menuList; index as i" 
+        [ngClass]="i === 0? 'selected' : ''">
+        <i class="fa-solid {{menu}}"></i>
+    </div>
+    <!-- <div class="icons py-3">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="icons py-3">
+        <i class="fa-solid fa-cube"></i>
+    </div>
+    <div class="icons py-3">
+        <i class="fa-solid fa-square-plus"></i>
+    </div>
+    <div class="icons py-3">
+        <i class="fa-solid fa-check-double"></i>
+    </div>
+    <div class="icons py-3">
+        <i class="fa-solid fa-gear"></i>
+    </div>
+    <div class="icons py-3">
+        <i class="fa-solid fa-download"></i>
+    </div> -->
+</nav>
