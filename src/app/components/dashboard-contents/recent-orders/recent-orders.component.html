@@ -1,4 +1,5 @@
 <div id="recent-orders">
+    <div class="card">
     <div class="col-md-12">
         <h1 class="fs-20">
             Recent Orders
@@ -39,12 +40,13 @@
                     </span>
                 </td>
                 <td>
-                    <i class="bi bi-x-lg" (click)="openModal(order)" data-bs-toggle="modal"
+                    <i class="fa-regular fa-pen-to-square" (click)="openModal(order)" data-bs-toggle="modal"
                         data-bs-target="#exampleModal"></i>
                 </td>
             </tr>
         </tbody>
     </table>
+    </div>
 </div>
 
 <!-- Modal -->
@@ -56,11 +58,23 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <h4>
+                <h5>
                     Customer Name: {{ selectedOrderDetails?.name }}
-                </h4>
+                </h5>
                 <h5>
                     Product: {{ selectedOrderDetails?.product }}
+                </h5>
+                <h5>
+                    Delivery date: {{selectedOrderDetails?.delivery_date}}
+                </h5>
+                <h5>
+                    Status: {{selectedOrderDetails?.status}}
+                </h5>
+                <h5>
+                    Tracking No#: {{selectedOrderDetails?.tracking_no}}
+                </h5>
+                <h5>
+                    Shipping: {{selectedOrderDetails?.shipping}}
                 </h5>
             </div>
             <div class="modal-footer">
